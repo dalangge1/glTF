@@ -1,4 +1,4 @@
-# EXT_GPU_COMPRESSED_TEXTURE
+# EXT_gpu_compressed_texture
 
 ## Contributors
 
@@ -18,14 +18,14 @@ This extension allows glTF models to use gpu compressed texture which is decode 
 
 ## glTF Schema Updates
 
-The `EXT_GPU_COMPRESSED_TEXTURE` extension is added to the `textures` node and specifies a `astc,bc7,dxt,pvrtc,etc1` property that points to the index of the `buffers` node. and the `compress` property is specify what compress algo is used. for example `0` is none compressed, and `1` is compressed by `zstd`.
+The `EXT_gpu_compressed_texture` extension is added to the `textures` node and specifies a `astc,bc7,dxt,pvrtc,etc1` property that points to the index of the `buffers` node. and the `compress` property is specify what compress algo is used. for example `0` is none compressed, and `1` is compressed by `zstd`.
 
 ```json
 "textures": [
     {
         "source": 0,
         "extensions": {
-            "EXT_GPU_COMPRESSED_TEXTURE": {
+            "EXT_gpu_compressed_texture": {
                 "astc": 1,
                 "bc7": 2,
                 "dxt": 3,
@@ -53,7 +53,7 @@ this extension not support glb for now.
 
 ### JSON Schema
 
-[glTF.EXT_GPU_COMPRESSED_TEXTURE.schema.json](schema/glTF.EXT_GPU_COMPRESSED_TEXTURE.schema.json)
+[glTF.EXT_gpu_compressed_texture.schema.json](schema/glTF.EXT_gpu_compressed_texture.schema.json)
 
 ## Known Implementations
 
